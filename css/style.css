@@ -15,6 +15,10 @@ body{
    margin-right: 50px;
 }
 
+.fas fa-cart-arrow-down{
+    font-size: 2em;
+}
+
 .nav a{
     font-size: 18px;
     margin: 0 15px;
