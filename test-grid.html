@@ -1,0 +1,79 @@
+
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            .gridContainer{
+                width: 100%;
+                background: #bdbdd6;
+            }
+
+            .gridItem{
+                background: #999;
+                font-size: 2em;
+            }
+            .gridItem:nth-child(even){
+                background: #999;
+                color: white;
+            }
+            .gridItem:nth-child(odd){
+                background: #eee;
+            }
+            /*GRID*/
+            .gridContainer{
+                display: grid;        /* fr ocupa o que excede da página */
+                grid-template-columns: 100px repeat(2, 1fr) ; /* respectivos valores da largura de cada coluna */
+                /*grid-template-columns: repeat(3, 90px);/* para repetir os mesmos valores*/
+                grid-template-rows: 100px 100px 100px; /* respectivos valores da altura de cada linha*/
+
+                /* espaço entre as células, como uma margem*/
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-gap: 10px 10px; /* os dois valores em uma linha*/
+            }
+
+            .gridItem:nth-child(1){
+                background-image: url(/blusa-manga-longa.png);
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 1; /*a célula começa na linha 1 e termnina na 4*/
+                grid-column-end: 4;
+
+                /* atalho para o de cima*/
+                grid-row: 1/2;
+                grid-column: 1/4;
+            }
+
+            .gridItem:nth-child(2){
+                background: rgb(32, 171, 32);
+                grid-row: 2/-1;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+        
+        
+    </body>
+</html>

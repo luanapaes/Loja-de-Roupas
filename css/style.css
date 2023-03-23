@@ -1,0 +1,218 @@
+body{
+    font-family: sans-serif;
+}
+
+.flexbox{
+    height: 45px;
+    border: 2px solid #7db7e7;
+    margin-bottom: 10px;
+}
+
+.nav{
+   display: flex;
+   justify-content: end;
+   margin-top: 10px;
+   margin-right: 50px;
+}
+
+.nav a{
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.ancora-nav:hover{
+    text-decoration: underline;
+    background: #e9f5ff;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+form{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    margin-top: 50px;
+    height: 300px;
+    border: 2px solid #7db7e7;
+}
+
+legend{
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+}
+
+.email, .pass, .btn-logar{
+    color: white;
+    background: rgb(206, 221, 243);
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+input[type="email"]{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-logar{
+    margin-top: 30px;
+    border: 2px solid #2461928c;
+    color: black;
+}
+
+.btn-logar:hover{
+    background: #b2d2ede3;
+    border: 1px solid #7db7e7;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+}
+
+fieldset input{
+    display: block;
+    margin: 0 44px 0 80px;
+}  
+
+.main-content{
+    display: inline;
+    align-items:center;
+    margin: 0 0 0 155px;
+}
+
+.title-clothes{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-section{
+    display: inline-block;
+    height: 410px;
+    margin: 0 0 30px 30px;
+    border: 1px solid #7db7e7;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-section img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 6px;
+}
+
+.main-section h2,p{
+    margin: 0;
+    padding-left: 6px;
+}
+
+.btn-buy{
+    width: 300px;
+    height: 40px;
+    width: 130px;
+    color: black;
+    font-size: 15px;
+    background: #7db7e7;
+    border: 1px solid #7db7e7a0;
+    padding: 0;
+    position: absolute;
+    top: 359px;
+    left: 78px;
+}
+
+.btn-buy:hover{
+    background: #dcecf8;
+    border: 1px solid #7db7e7;
+}
+
+.photo{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-profile{
+    width: 170px;
+    border: 2px solid #7db7e7;
+    border-radius: 50%;
+}
+
+.text-profile{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.text-profile p{
+    text-align: left;
+}
+
+.btn-alter{
+    margin: 20px 0 0 150px;
+    width: 180px;
+    height: 30px;
+    background: #dcecf8;
+    border: 1px solid #7db7e7;
+    box-sizing: border-box;
+}
+
+.btn-alter:hover, .btn-buy-grid:hover{
+    background: #7db7e7;
+}
+
+.user{
+    width: 500px;
+    height: 220px;
+}
+
+.gridConatiner{
+    width: 600px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px;
+}
+
+.gridConatiner img{
+    height: 408px;
+    width: 280px;
+}
+
+.gridItem:nth-child(1){
+    grid-column: 1/2;
+}
+
+.gridItem:nth-child(2){
+    grid-column: 2/-1;
+    margin-top: 50px;
+    padding: 0 30px;
+    line-height: 30px;
+}
+
+.btn-buy-grid{
+    margin: 60px auto;
+    width: 180px;
+    height: 30px;
+    background: #dcecf8;
+    border: 1px solid #7db7e7;
+}
+
