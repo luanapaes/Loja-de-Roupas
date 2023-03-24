@@ -17,3 +17,7 @@ function comprarPecaMasc(){
 function comprarPecaInfantil(){
     window.location = "buy-roupa-inf.html"
 }
+
+function sair(){
+    window.location = "index.html"
+}
